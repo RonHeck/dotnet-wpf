@@ -540,7 +540,7 @@ namespace System.Windows.Automation.Peers
                 throw new InvalidOperationException(SR.Get(SRID.SetFocusFailed));
         }
 
-        private UIElement _owner;
+        private readonly UIElement _owner;
         private SynchronizedInputAdaptor _synchronizedInputPattern;
     }
 }
